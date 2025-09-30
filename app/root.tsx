@@ -6,11 +6,12 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
+import { Provider } from "react-redux";
+import { store } from "../src/store/store";
 
-import type { Route } from "./+types/root";
 import "./app.css";
 
-export const links: Route.LinksFunction = () => [
+export const links = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
     rel: "preconnect",
@@ -42,10 +43,14 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  return (
+    <Provider store={store}>
+      <Outlet />
+    </Provider>
+  );
 }
 
-export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
+export function ErrorBoundary({ error }: { error: any }) {
   let message = "Oops!";
   let details = "An unexpected error occurred.";
   let stack: string | undefined;

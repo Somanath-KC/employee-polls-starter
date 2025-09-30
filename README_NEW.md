@@ -40,18 +40,20 @@ A React/Redux web application that allows employees to create and vote on "Would
 The application comes with three pre-configured users for testing:
 
 - **Sarah Edo**: `sarahedo` / `password123`
-- **Tyler McGinnis**: `tylermcginnis` / `abc321`  
+- **Tyler McGinnis**: `tylermcginnis` / `abc321`
 - **Mike Tsamis**: `mtsamis` / `xyz123`
 
 ## How to Use
 
 ### Logging In
+
 1. Go to the login page
 2. Select a user from the dropdown
 3. Enter the corresponding password
 4. Click "Sign In"
 
 ### Viewing Polls
+
 - The home page displays polls in two categories:
   - **Unanswered Polls**: Polls you haven't voted on yet (default view)
   - **Answered Polls**: Polls you've already answered
@@ -59,6 +61,7 @@ The application comes with three pre-configured users for testing:
 - Click "View Poll" to see details and vote
 
 ### Voting on Polls
+
 1. Click on an unanswered poll
 2. Select either Option A or Option B
 3. Click "Submit Vote"
@@ -66,6 +69,7 @@ The application comes with three pre-configured users for testing:
 5. Your choice will be highlighted
 
 ### Creating New Polls
+
 1. Click "New Poll" in the navigation
 2. Enter text for both options (minimum 5 characters each)
 3. Options must be different from each other
@@ -73,6 +77,7 @@ The application comes with three pre-configured users for testing:
 5. You'll be redirected to the home page where your new poll appears
 
 ### Viewing the Leaderboard
+
 1. Click "Leaderboard" in the navigation
 2. See all users ranked by their total activity
 3. Rankings are based on questions asked + questions answered
@@ -119,6 +124,7 @@ src/
 The application uses a simulated database with the following structure:
 
 ### Users
+
 ```typescript
 {
   id: string;
@@ -130,6 +136,7 @@ The application uses a simulated database with the following structure:
 ```
 
 ### Questions
+
 ```typescript
 {
   id: string;
