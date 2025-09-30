@@ -1,4 +1,6 @@
+import React from "react";
 import { render, screen, fireEvent, waitFor } from "@testing-library/react";
+import "@testing-library/jest-dom";
 import { Provider } from "react-redux";
 import { MemoryRouter } from "react-router";
 import { configureStore } from "@reduxjs/toolkit";

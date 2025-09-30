@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-router";
 import { useAppSelector } from "../store/hooks";
 import type { Question } from "../utils/_DATA";
