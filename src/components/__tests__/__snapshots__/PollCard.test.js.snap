@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PollCard component renders correctly 1`] = `
+<div
+  class="poll-card"
+>
+  <div
+    class="poll-card-header"
+  >
+    <img
+      alt="Test User"
+      class="avatar poll-card-avatar"
+      src="https://example.com/avatar.jpg"
+    />
+    <div>
+      <p
+        class="poll-card-author-name"
+      >
+        Test User
+      </p>
+      <p
+        class="text-muted poll-card-timestamp"
+      >
+        January 1, 2021 at 12:00 AM
+      </p>
+    </div>
+  </div>
+  <h3
+    class="poll-card-title"
+  >
+    Would You Rather...
+  </h3>
+  <div
+    class="poll-card-options"
+  >
+    <p
+      class="poll-card-option"
+    >
+      <span
+        class="poll-card-option-label"
+      >
+        A:
+      </span>
+       
+      Option One Text
+    </p>
+    <p
+      class="poll-card-option"
+    >
+      <span
+        class="poll-card-option-label"
+      >
+        B:
+      </span>
+       
+      Option Two Text
+    </p>
+  </div>
+  <div
+    class="poll-card-footer"
+  >
+    <span
+      class="poll-card-status not-answered"
+    >
+      Not Answered
+    </span>
+    <a
+      class="btn poll-card-view-btn"
+      href="/questions/test-question"
+    >
+      View Poll
+    </a>
+  </div>
+</div>
+`;

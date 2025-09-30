@@ -3,8 +3,7 @@ let users = {
     id: "sarahedo",
     password: "password123",
     name: "Sarah Edo",
-    avatarURL:
-      "https://ui-avatars.com/api/?name=Sarah+Edo&background=0d8abc&color=fff",
+    avatarURL: null,
     answers: {
       "8xf0y6ziyjabvozdd253nd": "optionOne",
       "6ni6ok3ym7mf1p33lnez": "optionOne",
@@ -17,8 +16,7 @@ let users = {
     id: "tylermcginnis",
     password: "abc321",
     name: "Tyler McGinnis",
-    avatarURL:
-      "https://ui-avatars.com/api/?name=Tyler+McGinnis&background=2d5aa0&color=fff",
+    avatarURL: null,
     answers: {
       vthrdm985a262al8qx3do: "optionOne",
       xj352vofupe1dqz9emx13r: "optionTwo",
@@ -29,8 +27,7 @@ let users = {
     id: "mtsamis",
     password: "xyz123",
     name: "Mike Tsamis",
-    avatarURL:
-      "https://ui-avatars.com/api/?name=Mike+Tsamis&background=15803d&color=fff",
+    avatarURL: null,
     answers: {
       xj352vofupe1dqz9emx13r: "optionOne",
       vthrdm985a262al8qx3do: "optionTwo",
@@ -59,11 +56,11 @@ let questions = {
     author: "mtsamis",
     timestamp: 1468479767190,
     optionOne: {
-      votes: ["mtsamis", "sarahedo"],
+      votes: [],
       text: "hire more frontend developers",
     },
     optionTwo: {
-      votes: [],
+      votes: ["mtsamis", "sarahedo"],
       text: "hire more backend developers",
     },
   },
